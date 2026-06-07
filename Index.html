@@ -3,63 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Luther Pagaran | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="nav-container">
+            <div class="logo">LP<span>.</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="hero">
-        <h2>Hello, I'm Luther</h2>
-        <p>Web Developer | Student | Programmer</p>
-        <button onclick="showMessage()">Hire Me</button>
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Luther Pagaran</span></h1>
+            <p class="subtitle">BSIT Student & Web Developer</p>
+            <p>Welcome to my professional web development portfolio showcase.</p>
+            <button id="hireMeBtn" class="btn">Hire Me</button>
+        </div>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            My Name is Luther Constantine S. Pagaran and Im 19 Years old and im still Single.
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>My Journey</h3>
+                    <p>My Name is Luther Constantine S. Pagaran and Im 19 Years old and im still Single.
             I am just average learner student and Im making programming and thing creation good experience
             and my new skill
-            hard learning
-        </p>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-
-        <div class="card">
-            <h3>Farmer Market Expense Tracker</h3>
-            <p>Java application for tracking market expenses.</p>
-        </div>
-
-        <div class="card">
-            <h3>Student Management System</h3>
-            <p>CRUD system using Java and MySQL.</p>
-        </div>
-
-        <div class="card">
-            <h3>Portfolio Website</h3>
-            <p>Responsive personal portfolio website.</p>
+            hard learning</p>
+                </div>
+                <div class="skills-box">
+                    <h3>Technical Skills</h3>
+                    <ul class="skills-list">
+                        <li><i class="fa-brands fa-html5"></i> HTML5 (Semantic Structure)</li>
+                        <li><i class="fa-brands fa-css3-alt"></i> CSS3 (Responsive Design)</li>
+                        <li><i class="fa-brands fa-js"></i> JavaScript (Interactivity)</li>
+                        <li><i class="fa-solid fa-code"></i> Java & MySQL (Backend)</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: luthersikekickgmail.com</p>
-        <p>Phone: 09465558022</p>
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects Included</h2>
+            <div class="projects-grid">
+                
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-wheat-sheet"></i></div>
+                    <h3>Farmer Market Expense Tracker</h3>
+                    <p>A Java-based application engineered to keep track of local market expenses and compute aggregate costs efficiently.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Student Management System</h3>
+                    <p>A data-driven application incorporating CRUD operations, built using Java backend frameworks alongside a MySQL database.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Portfolio Website</h3>
+                    <p>A fully responsive frontend interface meticulously crafted with HTML5, modern CSS layouts, and simple DOM logic.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Information</h2>
+            <p class="contact-intro">Let's build something creative together. Reach out via any of the channels below!</p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>luthersikekick@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+63 945 555 8022</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Luther Constantine Pagaran Portfolio</p>
+        <p>&copy; 2026 Luther Constantine Pagaran | All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
